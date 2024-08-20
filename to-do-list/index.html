@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to-do's</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="todo-body-left display-hide">
+        <div class="head-and-transition">
+            <div class="arrow-btn"><img src="arrow.svg" alt="">
+            </div>
+            <div class="heading">
+                <h1>Add new task</h1>
+            </div>
+        </div>
+        <div class="myimg"><img src="myimg.png" alt=""></div>
+       <div class="workfield-input">
+            <input id="field" placeholder="Enter your task field.." type="text">
+        </div>
+        <hr class="line-break-1">
+        <div class="task-input"><input id="task" placeholder="Type your task.." type="text">
+        </div>
+        <hr class="line-break-1">
+        <div class="input-time"><input id="deadline-time" type="time"></div>
+        <hr class="line-break-1">
+       <button onclick="Addtask()" class="submit-btn">Add Your Task</button>
+
+    </div>
+    <div class="todo-body-right">
+        <div class="info">
+            <h1>Your <br> To-do's
+            </h1>
+            <div class="date">
+            </div>
+            <div class="wallpaper">
+                <img src="backgroundimg.jpg" alt="">
+            </div>
+        </div>
+        <div class="tasks">
+            <h2>INBOX</h2>
+           <ul class="listcontainer" >
+            
+           </ul>
+        </div>
+        <div class="add">+</div>
+        <div class="total-task"><span id="Tasks-completed">Tasks</span><span id="task-count"></span></div>
+    </div>
+
+    <script src="todolist.js"></script>
+</body>
+
+</html>
